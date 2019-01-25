@@ -3,15 +3,11 @@
 </head>
 
 <body>
-<% if @birthday.real_date %>
   <% if @birthday.is_birthday %>
   <h1 align="center">Happy Birthday <%= @birthday.name %>!!!</h1>
   <% else %>
   <h1 align="center" >Your birthday is in <%= @birthday.days_till_birthday %> days </h1>
   <% end %>
-<% else %>
-  <h1 align="center" >INCORRECT DATE ENTERED</h1>
-<% end %>
 
 <form action="/" method="get" align="center">
   <input type="submit" value="back">

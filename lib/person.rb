@@ -33,12 +33,7 @@ class Person
   end
 
   def real_date
-    begin
-      Date.new(todays_date.year, @month, @date)
-      true
-    rescue ArgumentError
-      false
-    end
+    Date.valid_date?(todays_date.year, @month, @date)
   end
 
 

@@ -105,7 +105,7 @@ RSpec.configure do |config|
 
 ENV['RACK_ENV'] = 'test'
 
-require_relative '../app.rb'
+require './app.rb'
 require 'capybara'
 require 'capybara/rspec'
 require 'rspec'

@@ -4,7 +4,7 @@ require 'timecop'
 describe Person do
 
   before do
-    Timecop.freeze(Date.today)
+    Timecop.freeze(Date.new(2019, 1, 24))
   end
 
   after do
